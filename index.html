@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div>
+        <h1> DOM </h1>
+        <p id=”form-content” class=”content”>
+            <label for=”first-name”>First Name</label>
+            <input type=”text” id=”first-name” />
+            <label for=”last-name”>Last Name</label>
+            <input type=”text” id=”last-name” />
+            <label for=”email”>Email</label>
+            <input type=”text” id=”email” />
+        </p>
+        <div id=”main-content” class=”content”>
+            <p class=”render”> First Name : Alex</p>
+            <p class=”render” id=”lastName”>Last Name: Bank</p>
+            <p class=”render”> Email : alexbank@example.com</p>
+            <p class=”render”> Country : Pakistan </p>
+            <p class=”render”> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        var acess = document.body.children[0].lastElementChild;
+        var get = acess.querySelectorAll('render');
+        // console.log(acess); //i
+        // console.log(get);
+        var child = acess.children;
+        // console.log(child); //ii
+        var html = acess.innerHTML;
+        // console.log(html)
+        // var nodeType = document.getElementById('form-content').nodeType;
+    </script>
+</body>
+
+</html>
